@@ -17,7 +17,7 @@ const server = http.createServer( function(response, res){
     // If the path of the url contains '/' run this conditional
     if(page == '/'){
       // Conditional '/', read the file index.html
-      fs.readFile('index2.html', function(err, data){
+      fs.readFile('index.html', function(err, data){
         // Server response back with Code: level 200
         res.writeHead(200, {'Content-Type': 'text/html'});
         // Server response back with data from the index.html file
